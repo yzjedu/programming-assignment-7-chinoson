@@ -1,3 +1,7 @@
+# Henderson Fryer
+# CS701_W02
+# Submitted 08/24/2024
+
 import csv
 
 # Constants for column indices
@@ -42,14 +46,14 @@ def print_min_and_max_profit(movieTable):
     for i in range(len(movieTable)):
         if movieTable[i][4] < min:
             min = movieTable[i][4]
-            lowestProfit = movieTable[i]
+            lowestProfit = movieTable[i][1]
         if movieTable[i][4] > max:
             max = movieTable[i][4]
-            highestProfit = movieTable[i]
+            highestProfit = movieTable[i][1]
 
 
-    print(lowestProfit)
-    print(highestProfit)
+    print("The lowest profitting movie is", lowestProfit)
+    print("The highest profitting movie is", highestProfit)
 
 
 # Function that prints detailed information about a movie.
